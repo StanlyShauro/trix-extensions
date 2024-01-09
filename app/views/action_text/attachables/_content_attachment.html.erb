@@ -1,3 +1,8 @@
-<figure class="attachment attachment--content attachment--<%= content_attachment.name %>">
-  <%= render "action_text/attachables/content_attachments/#{content_attachment.name.underscore}" %>
+<%
+# <figure class="attachment attachment--content attachment--<%= content_attachment.name %#>">
+#  <%= render "action_text/attachables/content_attachments/#{content_attachment.name.underscore}" %#>
+# </figure>
+%>
+<figure class="attachment attachment--content attachment--hr">
+  <%= content_attachment.content.html_safe %>
 </figure>
